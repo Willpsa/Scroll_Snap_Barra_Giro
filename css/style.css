@@ -1,0 +1,82 @@
+* {
+    font-family: 'MuseoModerno', cursive;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, black, rgba(40, 5, 41, 0.921), rgba(41, 5, 37, 0.681));
+}
+
+.container {
+    display: flex;
+    overflow-x: scroll;
+    padding: 24px;
+    width: 300px;
+    background: #fff;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: rgba(50, 1, 61, 0.453);
+    border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 29, 101, 0.613);
+    border-radius: 4px;
+}
+
+.container .item {
+    flex: 0 0 100%;
+    padding: 24px;
+    color: #ffffff;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+
+.container .item h2 {
+    text-transform: capitalize;
+}
+
+.container .item h4 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+    margin-top: 48px;
+    margin-bottom: 8px;
+}
+
+.container .item:nth-child(1) {
+    background: linear-gradient(170deg, #0061ff, #60efff);
+}
+
+.container .item:nth-child(2) {
+    background: linear-gradient(170deg, #7ef29d, #033f0a);
+}
+
+.container .item:nth-child(3) {
+    background: linear-gradient(170deg, #40c9ff, #6568f6);
+}
+
+.container .item:nth-child(4) {
+    background: linear-gradient(180deg, #f7ba2c, #f7622c, #d90101);
+}
+
+.container .item:nth-child(5) {
+    background: linear-gradient(170deg, #609aff, #266437, #9a9512, #ae10f9);
+}
